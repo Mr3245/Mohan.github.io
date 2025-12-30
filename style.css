@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Orbitron', sans-serif;
+    line-height: 1.6;
+    background-color: #000000;
+    color: #ffffff;
+}
+header{
+    display : flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: linear-gradient(90deg, #000000, #0b0b0b);
+    border-bottom: 1px solid #00c88a;
+}
+header h1{
+    font-size: 28px;
+    color: #2ae8a6;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}   
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    position: relative;
+}
+nav ul li a::after{
+    content: " ";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #00ff9c;
+    left: 0;
+    bottom: -5px;
+    transition: width 0.3s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+/* ===============================
+   VIDEO SECTION*/
+.video{
+    background: #0b0b0b;
+    padding: 40px 60px;
+}
+.video iframe{
+    border-radius: 14px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8),
+                0 0 20px rgba(0, 200, 138, 0.15);
+}
+section {
+    padding: 80px 60px;
+    background-color: #0B0B0B;
+}
+
+section h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #ffffff;
+    text-transform: uppercase;
+    border-left: 3px solid #00c88a;
+    padding-left: 15px;
+}
+/* ===============================
+   HOME SECTION
+================================ */
+#home img {
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid #00ff9c;
+}
+#home p{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 22px
+}
+/* ===============================
+   HISTORY SECTION (ROW / COLUMN)
+================================ */
+
+.row {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.column {
+    flex: 1;
+}
+
+#history img {
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid #00ff9c;
+}
+#history p {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+}
+/* ===============================
+   ACHIEVEMENTS CARDS
+================================ */
+
+.ach_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.ach_card {
+    background-color: #111111;
+    padding: 30px;
+    border-radius: 12px;
+    border-left: 3px solid #00c88a;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.ach_card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 200, 138, 0.25);
+}
+
+.ach_card h3 {
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.ach_card p {
+    color: #cccccc;
+    font-size: 20px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+/* ===============================
+   RECORDS TABLE
+================================ */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #111;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 15px;
+    border-bottom: 1px solid #1a1a1a;
+    text-align: left;
+}
+td{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 18px;
+}
+th {
+    color: #2ae8a6;
+    text-transform: uppercase;
+    background-color: #000;
+}
+tr {
+    transition: background-color 0.3s ease;
+}
+tr:hover {
+    background-color: #1a1a1a;
+}
+
+/* ===============================
+   LEGACY SECTION
+================================ */
+
+#legacy p {
+    max-width: 100%;
+    font-size: 20px;
+    color: #dddddd;
+    font-family: 'Titillium Web', sans-serif;
+}
+blockquote {
+    border-left: 4px solid #2ae8a6;
+    padding-left: 15px;
+    font-style: italic;
+    color: #fff;
+    margin: 20px 0;
+}
+/* ===============================
+   FOOTER
+================================ */
+
+footer {
+    background-color: #000;
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #1a1a1a;
+    border-top: 1px solid #00c88a;
+}
+
+footer p {
+    color: #888;
+}
